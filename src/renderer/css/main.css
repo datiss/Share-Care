@@ -1,0 +1,163 @@
+html, body, #app{
+  height: 100vh;
+}
+
+#login {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    justify-content: center;
+    display: flex;
+    background: rgba(0,0,0,0.85);
+    align-items: center;
+}
+
+#login-form {
+    padding: 35px 45px;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.75);
+    border-radius: 3px;
+}
+
+#main {
+    height: 100vh;
+    display: flex;
+}
+
+#window {
+  padding: 10px;
+    flex: 1 1 0;
+    display: flex;
+}
+
+#info {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabs {
+    display: none;
+    flex: 1 1 0;
+}
+
+#tabs-nav {
+  position: relative;
+    padding-right: 40px;
+}
+
+#tabs-nav .dropdown {
+    position: absolute;
+    right: 0px;
+}
+
+#tabs-nav .dropdown-toggle::after{
+  display: none;
+}
+
+#tabs-nav .nav-link {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 26px;
+}
+
+#tabs-content {
+    position: relative;
+    overflow: auto;
+    max-height: calc(100vh - 66px);
+}
+
+#tabs-content .remote-controls {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#tabs-content .remote-controls button {
+    margin-right: 5px;
+}
+
+#tabs-content .img-fluid {
+    width: 100%;
+    max-height: calc(100vh - 66px);
+}
+
+.terminal-view {
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    color: #eee;
+    padding: 10px 5px;
+    height: calc(100vh - 76px);
+}
+
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  max-width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#tabs textarea, #tabs video {
+    /* width: 100%; */
+    max-height: calc(100vh - 76px);
+    height: calc(100vh - 76px);
+    margin: auto;
+    display: block;
+}
+
+#localvideo {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    height: 150px;
+    z-index: 1000;
+    border-radius: 5px;
+  /*  box-shadow: 0px 0px 5px; */
+}
+
+#captureCanvas{
+  position: fixed;
+  bottom: 10px;
+  left: 320px;
+  height: 150px;
+  z-index: 1000;
+  border-radius: 5px;
+
+}
+
+#chat {
+    display: flex;
+    width: 280px;
+    background: rgba(255,255,255,0.35);
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+#message-wrapper {
+    flex: 1 1 0;
+    overflow: auto;
+}
+
+#message-new {
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+.message .user {
+    font-weight: bold;
+    margin-right: 4px;
+}

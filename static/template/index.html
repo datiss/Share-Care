@@ -1,0 +1,85 @@
+<img  id="localvideo">
+
+<main id="main">
+  <div id="window">
+    <div id="tabs">
+      <nav>
+        <div class="nav nav-tabs" id="tabs-nav" role="tablist">
+
+        </div>
+      </nav>
+      <div class="tab-content mt-2" id="tabs-content">
+      </div>
+    </div>
+    <div id="info">
+
+      <div id="tabs-add" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-plus"></i> Add Tab
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <button id="window-editor-add" class="dropdown-item" type="button">Editor</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="chat">
+    <div id="message-wrapper">
+        <div id="messages">
+        </div>
+      </div>
+      <form id="message-new">
+        <textarea id="message-new-text" class="form-control"></textarea>
+        <div class="text-right mt-1">
+          <button class="btn btn-sm btn-block btn-primary"><i class="fa fa-check mr-2"></i>Senden</button>
+        </div>
+      </form>
+    </div>
+</main>
+<div id="login">
+    <div id="login-form">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-user"></i></span>
+        </div>
+        <input id="login-name" type="text" class="form-control" placeholder="Username" value="User">
+      </div>
+      <div class="mb-3 d-flex justify-content-between">
+        <button id="login-host-opt" name="host-opt" class="btn btn-sm btn-primary"><i class="fa fa-cog mr-2"></i>Option</button>
+        <button id="login-host" name="host" class="btn btn-sm btn-primary"><i class="fa fa-sign-in-alt mr-2"></i>Host</button>
+      </div>
+      <div class="row mb-3">
+        <div class="col-12 col-sm-8">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-network-wired"></i></span>
+            </div>
+            <input id="login-ip" list="login-ip-datalist" type="text" class="form-control" placeholder="Ip" value="home.datiss.it">
+            <datalist id="login-ip-datalist"></datalist>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-4">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-shield-alt"></i></span>
+            </div>
+            <input id="login-port" type="text" class="form-control" placeholder="45645" value="45645">
+          </div>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-key"></i></span>
+        </div>
+        <input id="login-password" type="password" class="form-control" placeholder="Server Passwort">
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <button id="login-join-opt" name="join-opt" class="btn btn-sm btn-primary"><i class="fa fa-cog mr-2"></i>Option</button>
+        <button id="login-join" name="join" class="btn btn-sm btn-primary"><i class="fa fa-sign-in-alt mr-2"></i>Join</button>
+      </div>
+    </div>
+</div>

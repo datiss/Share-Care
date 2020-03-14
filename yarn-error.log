@@ -1,0 +1,55 @@
+Arguments: 
+  /home/juli/.nvm/versions/node/v12.16.1/bin/node /usr/share/yarn/bin/yarn.js all
+
+PATH: 
+  /home/juli/.nvm/versions/node/v12.16.1/bin:/home/juli/.npm-global/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/juli/bin:/home/juli/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  12.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /media/juli/Speicher/Projekte/Electron/Bildschirm/package.json: Unexpected token } in JSON at position 350
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "electron-webpack-quick-start",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+      "dev": "electron-webpack dev",
+      "compile": "electron-webpack",
+      "dist": "yarn compile && electron-builder",
+      "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
+      "all": "yarn compile && electron-builder -mwl",
+    },
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "^5.12.1",
+      "jquery": "^3.4.1",
+      "socket.io": "^2.3.0",
+      "socket.io-stream": "^0.9.1",
+      "source-map-support": "^0.5.12"
+    },
+    "devDependencies": {
+      "electron": "5.0.6",
+      "electron-builder": "^21.0.11",
+      "electron-webpack": "^2.7.4",
+      "webpack": "~4.35.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

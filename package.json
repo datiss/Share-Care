@@ -1,0 +1,32 @@
+{
+  "name": "bildschirm-chat",
+  "version": "0.0.2",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
+    "all": "yarn compile && electron-builder -mwl"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "electron-settings": "^3.2.0",
+    "jquery": "^3.4.1",
+    "node-pty": "^0.9.0",
+    "node-turn": "0.0.4",
+    "robotjs": "^0.6.0",
+    "socket.io": "^2.3.0",
+    "socket.io-stream": "^0.9.1",
+    "source-map-support": "^0.5.12",
+    "string-to-stream": "^3.0.1",
+    "xterm": "^4.4.0"
+  },
+  "devDependencies": {
+    "electron": "5.0.6",
+    "electron-builder": "^21.0.11",
+    "electron-rebuild": "^1.10.0",
+    "electron-webpack": "^2.7.4",
+    "webpack": "~4.35.3"
+  }
+}
